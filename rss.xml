@@ -1,0 +1,29 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule">
+  <channel>
+      <title>{{ site.title }}</title>
+    <link>{{ site.url }}</link>
+    <language>en</language>
+    <webMaster>{{ site.email }} ({{ site.author }})</webMaster>
+    <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
+    <copyright>Copyright 2009</copyright>
+    <creativeCommons:license>http://creativecommons.org/licenses/by-nc-sa/3.0/</creativeCommons:license>
+    <ttl>60</ttl>
+    <description>{{ site.description }}</description>
+    {% for post in site.posts limit:10 %}
+    <item>
+      <title>{{ post.title }}</title>
+      <link>{{ site.url }}{{ post.url }}</link>
+      <pubDate>{{ post.date }}</pubDate>
+      <guid>{{ site.url }}/archives{{ post.id }}/</guid>
+      <description>{{ post.content | xml_escape }}</description>
+      <creativeCommons:license>http://creativecommons.org/licenses/by-nc-sa/3.0/</creativeCommons:license>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

@@ -1,0 +1,18 @@
+---
+layout: page
+title: Page not found (Error 404)
+permalink: /404/
+---
+Oops. That page does not exist.
+
+Maybe ask Google to search this site for you?
+
+<div>
+<form method="get" action="http://www.google.com/search">
+    <input type="text" id="search" style="width: 260px;" class="ti" name="q" value="" />
+    <input type="hidden" name="q" value="site:jon.smajda.com" />
+    <input type="submit" value="Search" />
+</form>
+</div>
+
+

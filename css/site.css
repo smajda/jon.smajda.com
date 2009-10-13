@@ -1,0 +1,346 @@
+---
+#hlinks: "LightSlateGrey"
+hlinks: "#556677"
+plinks: "DarkRed"
+---
+/* jon.smajda.com */
+
+/* blueprint's reset.css */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body {line-height:1.5;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+
+/* blueprint's typography.css, with changes */
+h1 {font-size:3em;line-height:1;margin-bottom:0.5em;}
+h2 {font-size:2em;margin-bottom:0.75em;line-height: 1.2em;}
+h3 {font-size:1.5em;line-height:1;margin-bottom:1em;}
+h4 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
+h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
+h6 {font-size:1em;font-weight:bold;}
+p {margin:0 0 1.5em;}
+p img.left {float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
+p img.right {float:right;margin:1.5em 0 1.5em 1.5em;}
+a:focus, a:hover {color:#000;}
+a {color:#009;text-decoration:underline;}
+blockquote {margin:1.5em;color:#666;}
+strong, b {font-weight:bold; color: #444;}
+em, dfn {font-style:italic;}
+dfn {font-weight:bold;}
+sup, sub {line-height:0;}
+abbr, acronym {border-bottom:1px dotted #666;}
+address {margin:0 0 1.5em;font-style:italic;}
+del {color:#666;}
+pre {margin:1.5em 0;white-space:pre;}
+pre, code, tt {font:1em 'andale mono', 'lucida console', monospace;line-height:1.5;}
+li ul, li ol {margin:0 1.5em;}
+ul, ol {margin:0 1.5em 1.5em 1.5em;}
+ul {list-style-type:disc;}
+ol {list-style-type:decimal;}
+dl {margin:0 0 1.5em 0;}
+dl dt {font-weight:bold;}
+dd {margin-left:1.5em;}
+table {margin-bottom:1.4em;width:100%;}
+th {font-weight:bold;}
+thead th {background:#c3d9ff;}
+th, td, caption {padding:4px 10px 4px 5px;}
+tr.even td {background:#e5ecf9;}
+tfoot {font-style:italic;}
+caption {background:#eee;}
+.small {font-size:.8em;margin-bottom:1.875em;line-height:1.875em;}
+.large {font-size:1.2em;line-height:2.5em;margin-bottom:1.25em;}
+.hide {display:none;}
+.quiet {color:#666;}
+.loud {color:#000;}
+.highlight {background:#ff0;}
+.added {background:#060;color:#fff;}
+.removed {background:#900;color:#fff;}
+.first {margin-left:0;padding-left:0;}
+.last {margin-right:0;padding-right:0;}
+.top {margin-top:0;padding-top:0;}
+.bottom {margin-bottom:0;padding-bottom:0;}
+
+/* blueprint's forms.css */
+label {font-weight:bold;}
+fieldset {padding:1.4em;margin:0 0 1.5em 0;border:1px solid #ccc;}
+legend {font-weight:bold;font-size:1.2em;}
+input[type=text], input[type=password], input.text, input.title, textarea, select {background-color:#fff;border:1px solid #bbb;}
+input[type=text]:focus, input[type=password]:focus, input.text:focus, input.title:focus, textarea:focus, select:focus {border-color:#666;}
+input[type=text], input[type=password], input.text, input.title, textarea, select {margin:0.5em 0;}
+input.text, input.title {width:300px;padding:5px;}
+input.title {font-size:1.5em;}
+textarea {width:390px;height:250px;padding:5px;}
+input[type=checkbox], input[type=radio], input.checkbox, input.radio {position:relative;top:.25em;}
+form.inline {line-height:3;}
+form.inline p {margin-bottom:0;}
+.error, .notice, .success {padding:.8em;margin-bottom:1em;border:2px solid #ddd;}
+.error {background:#FBE3E4;color:#8a1f11;border-color:#FBC2C4;}
+.notice {background:#FFF6BF;color:#514721;border-color:#FFD324;}
+.success {background:#E6EFC2;color:#264409;border-color:#C6D880;}
+.error a {color:#8a1f11;}
+.notice a {color:#514721;}
+.success a {color:#264409;}
+
+
+/* My stuff */
+
+/* structure */
+body {
+    margin: 3em 5px 0 4em;
+}
+#nav {
+    width: 240px;
+    margin-right: 60px;
+    float: left;
+    margin-bottom: 3em;
+}
+#content {
+    width: 450px;
+    float: left;
+}
+#footer {
+    text-align: center;
+    margin: 2em;
+    width: 100%;
+}
+
+/* fonts */
+body {
+    font-size: 12px;
+    color: #333;
+    font-family: 'Lucida Grande', 'Verdana', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Palatino", "URWPalladioL", "Times", serif;
+    color: #444;
+    text-transform: lowercase;
+}
+h3, h4, h5, h6 {
+    margin-top: 1.5em;
+}
+pre, code {
+    font-family: 'Monaco';
+    font-size: 10px;
+}
+
+/* nav */
+#nav h1 {
+    font-size: 2em; 
+    line-height: 1.2em;
+}
+#nav h3 {
+    margin-bottom: 0.6em;
+}
+#nav p {
+   margin-bottom: 1.1em;
+}
+#nav ul {
+    font-family: "Palatino", "URWPalladioL", "Times", serif;
+    font-size: 1.2em;
+    margin-left: 0;
+    text-transform: lowercase;
+}
+#nav ul li {
+    list-style: none;   
+    padding-bottom: 0.3em;
+    color: #888;
+}
+#nav ul li:before {
+    content: "\2192\ ";
+}
+#nav ul li a {
+    color: {{ page.hlinks }};
+    border: none;
+}
+#nav ul li a:hover {
+    background-color: {{ page.hlinks }} ;
+    color: #fff;
+}
+
+/* paginator */
+.paginator {
+    font-family: "Palatino", "URWPalladioL", "Times", serif;
+    font-size: 1.2em;
+    text-transform: lowercase;
+    overflow: hidden;
+    color: #888;
+    line-height: 1.4em;
+}
+div.previous {
+    display: block;
+    float: left;
+    width: 215px;
+    padding-right: 10px;
+}
+div.next {
+    display: block;
+    float: left;
+    width: 215px;
+    padding-left: 10px;
+    text-align: right;
+}
+
+
+/* links */
+a {
+    color: {{ page.hlinks }};
+    text-decoration: none;
+}
+a:hover {
+    background-color: {{ page.hlinks }} ;
+    color: #fff;
+}
+p a, li a, blockquote a {
+    color: {{ page.plinks }}; 
+    text-decoration: none; 
+    border-bottom: dotted thin #ccc;
+}
+p a:hover, li a:hover, blockquote a:hover {
+    color: #fff; 
+    background-color: {{ page.plinks }}; 
+    text-decoration: none; 
+}
+
+/* standard elements */
+ul li, ol li {
+    padding-bottom: 0.5em; 
+}
+hr {
+    color: none;
+    border: none;
+    height: 1em;
+    border-top: solid 1px #ddd;
+}
+
+
+/* misc elements */
+.post {
+    padding-bottom: 2.5em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid #ddd;
+}
+.pubdate {
+    color: #888;
+    margin-bottom: 1.5em;
+    margin-top: -1.6em;
+}
+.footnotes ol li p {display: inline;}
+.alignleft{float: left;}
+.alignright{float: right;}
+.aligncenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* archive list */
+ul.archive {
+    margin-left: 0;
+}
+ul.archive li {
+    list-style: none;
+}
+div.archive-date {
+    float: left;
+    color: #888;
+    width: 7.2em;
+    text-align: right;
+    padding-right: 13px;
+    font-size: 0.9em;
+    line-height: 2.2em;
+}
+div.archive-link {
+    overflow: hidden;
+    font-family: "Palatino", "URWPalladioL", "Times", serif;
+    font-size: 1.3em;
+    text-transform: lowercase;
+}
+ul.archive li div.archive-link a {
+    border: none;
+    color: {{ page.hlinks }};  
+}
+ul.archive li div.archive-link a:hover {
+    background-color: {{ page.hlinks }};    
+    color: #fff;
+}
+
+
+
+/* Leftovers for old posts with WP galleries */
+#gallery-1 { margin: auto; }    
+#gallery-1 .gallery-item {  
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+    width: 33%; 
+} 
+#gallery-1 .gallery-caption {
+    margin-left: 0;
+}
+
+
+/* For pygments, from http://tom.preston-werner.com/css/syntax.css */
+.highlight  { background: #ffffff; }
+.highlight .c { color: #999988; font-style: italic } /* Comment */
+.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .k { font-weight: bold } /* Keyword */
+.highlight .o { font-weight: bold } /* Operator */
+.highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #999999; font-weight: bold } /* Comment.Preproc */
+.highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.highlight .gd .x { color: #000000; background-color: #ffaaaa } /* Generic.Deleted.Specific */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #aa0000 } /* Generic.Error */
+.highlight .gh { color: #999999 } /* Generic.Heading */
+.highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.highlight .gi .x { color: #000000; background-color: #aaffaa } /* Generic.Inserted.Specific */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #555555 } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+.highlight .gt { color: #aa0000 } /* Generic.Traceback */
+.highlight .kc { font-weight: bold } /* Keyword.Constant */
+.highlight .kd { font-weight: bold } /* Keyword.Declaration */
+.highlight .kp { font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #009999 } /* Literal.Number */
+.highlight .s { color: #d14 } /* Literal.String */
+.highlight .na { color: #008080 } /* Name.Attribute */
+.highlight .nb { color: #0086B3 } /* Name.Builtin */
+.highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+.highlight .no { color: #008080 } /* Name.Constant */
+.highlight .ni { color: #800080 } /* Name.Entity */
+.highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+.highlight .nn { color: #555555 } /* Name.Namespace */
+.highlight .nt { color: #000080 } /* Name.Tag */
+.highlight .nv { color: #008080 } /* Name.Variable */
+.highlight .ow { font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #009999 } /* Literal.Number.Float */
+.highlight .mh { color: #009999 } /* Literal.Number.Hex */
+.highlight .mi { color: #009999 } /* Literal.Number.Integer */
+.highlight .mo { color: #009999 } /* Literal.Number.Oct */
+.highlight .sb { color: #d14 } /* Literal.String.Backtick */
+.highlight .sc { color: #d14 } /* Literal.String.Char */
+.highlight .sd { color: #d14 } /* Literal.String.Doc */
+.highlight .s2 { color: #d14 } /* Literal.String.Double */
+.highlight .se { color: #d14 } /* Literal.String.Escape */
+.highlight .sh { color: #d14 } /* Literal.String.Heredoc */
+.highlight .si { color: #d14 } /* Literal.String.Interpol */
+.highlight .sx { color: #d14 } /* Literal.String.Other */
+.highlight .sr { color: #009926 } /* Literal.String.Regex */
+.highlight .s1 { color: #d14 } /* Literal.String.Single */
+.highlight .ss { color: #990073 } /* Literal.String.Symbol */
+.highlight .bp { color: #999999 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #008080 } /* Name.Variable.Class */
+.highlight .vg { color: #008080 } /* Name.Variable.Global */
+.highlight .vi { color: #008080 } /* Name.Variable.Instance */
+.highlight .il { color: #009999 } /* Literal.Number.Integer.Long */

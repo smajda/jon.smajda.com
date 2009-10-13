@@ -1,0 +1,49 @@
+{% include header.html %}
+<body>
+    <div id="nav">
+            <h1><a href="/">{{ site.title }}</a></h1>
+
+            <ul>
+                <li><a href="/archive/">Archive</a></li>
+                <li><a href="/about/">About This Blog</a></li>
+                <li><a href="/rss.xml">RSS</a> | <a href="/atom.xml">Atom</a></li>
+            </ul>
+
+            <h3>search</h3>
+                <form method="get" action="http://www.google.com/search">
+                    <input type="text" id="search" class="ti" name="q" value="" />
+                    <input type="hidden" name="q" value="site:jon.smajda.com" />
+                    <input type="submit" value="Search" />
+                </form>
+
+            <h3>about me</h3>
+            <p>I am a PhD candidate in sociology at the 
+              <a href="http://www.soc.umn.edu">University of Minnesota</a>. I work for 
+              <a href="http://contexts.org">Contexts</a>.</p>
+
+            <h3>more me</h3>
+
+            <ul>
+                <li><a title="smajda.tumblr.com" href="http://smajda.tumblr.com">tumblr</a></li>
+                <li><a title="@smajda on twitter" href="http://twitter.com/smajda">twitter</a></li>
+                <li><a title="facebook.com/jonsmajda" href="http://facebook.com/jonsmajda">facebook</a></li>
+                <li><a title="I do try" href="http://github.com/smajda">github</a></li>
+                <li><a title="Silly music" href="http://soundcloud.com/smajda">soundcloud</a></li>
+            </ul>
+
+            <h3>aggregate feed</h3>
+            <p>For personal archival purposes, and to aid any prospective stalkers, I've created <a href="http://files.smajda.com/jon/feeds/aggregate/">an aggregate feed</a> of all my online activity. (I made it using <a href="http://simplepie.org/">SimplePie</a>. You can <a href="http://gist.github.com/204194">get the code here</a>.)</p>
+    </div>
+
+    <div id="content">
+
+    {{ content }}
+
+    <div id="footer">
+        <a id="cc-link" title="Creative Commons by-nc-sa License" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/"><img src="{{ site.files }}cc.png" width="88px" height="31px" alt="Creative Commons Logo" /></a>
+    </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+# accessible as site.*
+title: "Jon Smajda's Blog"
+description: "Jon Smajda's Blog"
+url: "http://jon.smajda.com"
+files: "http://jon.smajda.com/files/" 
+author: "Jon Smajda"
+email: "jon@smajda.com"
+
+# --server --auto
+server: true
+auto: true
+
+# default './_site'
+destination: './_site'
+
+# turn on pygment syntax highlighting
+pygments: true
+
+# pagination
+paginate: 8
+
+## permalink style: http://wiki.github.com/mojombo/jekyll/permalinks
+permalink: pretty
+
+# use rdiscount for markdown
+markdown: rdiscount
+
+# maruku settings
+maruku:
+  png_dir: files/latex
+  png_url: /images/latex
