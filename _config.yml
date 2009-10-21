@@ -17,7 +17,7 @@ destination: './_site'
 pygments: true
 
 # pagination
-paginate: 8
+# paginate: 8
 
 ## permalink style: http://wiki.github.com/mojombo/jekyll/permalinks
 permalink: pretty

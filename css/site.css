@@ -103,9 +103,19 @@ body {
     float: left;
 }
 #footer {
-    text-align: center;
-    margin: 2em;
+    text-align: left;
+    margin: 2em 0 2em 0;
     width: 100%;
+    color: #777;
+}
+#footer a {
+    color: #777;    
+}
+#footer:hover a {
+    color:  {{ page.plinks }};
+}
+#footer a:hover {
+    color: #fff;
 }
 
 /* fonts */
@@ -161,6 +171,38 @@ pre, code {
     color: #fff;
 }
 
+
+/* home */
+/* home */
+h3#recent-posts {
+    margin-top: 6px;
+    margin-bottom: 0.8em;
+}
+ul#elsewhere {
+    list-style: none;
+    margin-left: 0;
+}
+ul#elsewhere li {
+    padding-bottom: 1.3em;
+}
+ul#elsewhere li span.meta {
+    color: #777;
+}
+ul#elsewhere li span.meta a {
+    border-bottom: none;
+    color: #777;
+}
+ul#elsewhere li:hover span.meta a {
+    color: {{ page.plinks }};
+    border-bottom: 1px dotted #777;
+}
+ul#elsewhere li:hover span.meta a:hover {
+    color: #fff;
+}
+
+
+
+
 /* paginator */
 .paginator {
     font-family: "Palatino", "URWPalladioL", "Times", serif;
@@ -169,6 +211,7 @@ pre, code {
     overflow: hidden;
     color: #888;
     line-height: 1.4em;
+    margin-bottom: 2em;
 }
 div.previous {
     display: block;
@@ -239,7 +282,7 @@ hr {
 
 /* archive list */
 ul.archive {
-    margin-left: 0;
+    margin-left: -3px;
 }
 ul.archive li {
     list-style: none;
